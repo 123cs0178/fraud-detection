@@ -108,10 +108,3 @@ This project is intended for educational and research purposes. Predictions may 
 - **Phone:** +91 9034341712
 - **GitHub:** [123cs0178](https://github.com/123cs0178)
 
-## 🙏 Acknowledgment
-
-This repository is adapted from the original [fraud-detection project](https://github.com/Sweekar18/fraud-detection). The original project and its contributors are acknowledged. The implementation and reported results should be verified against the code in this repository.
-
-## 📄 License
-
-Check the repository's license file before reusing or redistributing this project. If no license is present, reuse permissions have not been established.
