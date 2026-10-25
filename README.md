@@ -1,78 +1,115 @@
-# Fraud Detection System for Nepali Banking 🏦
+Banking Fraud Detection System 🏦
 
-This project implements an **Advanced Machine Learning–based Fraud Detection System** designed specifically for **Global IME Bank** and Nepali banking systems.  
-It was developed as part of the **Global IME Bank Hackathon (April 2025)** to address the growing sophistication of financial fraud beyond traditional rule-based systems.
+An advanced machine learning-based fraud detection system designed to identify suspicious banking transactions using predictive models, transaction features, and risk scoring.
 
----
+📌 Problem Statement
 
-## 📌 Problem Statement
-Nepali banks, including Global IME Bank, face increasing challenges from fraudsters who exploit weaknesses in traditional **rule-based detection systems**.  
-Some key issues:
-- Static rules that cannot adapt to evolving fraud tactics
-- High false positive rates → poor customer experience
-- Inability to detect complex fraud patterns across multiple accounts, locations, or times
-- Significant operational costs and reputational risks
+Traditional rule-based fraud detection systems can struggle to identify evolving fraud patterns. Common challenges include:
 
----
+Static rules that fail to adapt to new fraud techniques.
 
-## 🚀 Proposed Solution
-We developed a **multi-stage, real-time machine learning system** that:
-- Uses an **ensemble of Random Forest, XGBoost, and Neural Networks**
-- Engineers **120+ banking-specific features** (transaction timing, location distance, account behavior, remittance-aware patterns, festival patterns, etc.)
-- Provides **fraud probability scores** instead of binary decisions
-- Includes an **explainability framework** with SHAP values and bilingual (Nepali/English) explanations
-- Works in **real-time** with sub-150ms latency
+High false-positive rates that affect legitimate customers.
 
----
+Difficulty detecting complex patterns across transactions, accounts, locations, and time.
 
-## 🛠️ Tech Stack
-- **Python 3**
-- **NumPy, Pandas** – data preprocessing
-- **Scikit-learn, XGBoost, TensorFlow/Keras** – ML modeling
-- **Matplotlib, Seaborn, SHAP** – analysis & explainability
-- **Flask** – real-time API for fraud detection
+Operational costs associated with manual fraud investigation.
 
----
+🚀 Proposed Solution
 
-## 📊 Key Results
-- **Accuracy:** 95.3%  
-- **AUC Score:** 0.951  
-- **False Positives:** Reduced by 23% compared to rule-based systems  
-- **Response Time:** ~120–150ms per transaction  
+The project explores a machine learning-based approach to banking fraud detection that aims to:
 
-Business impact for Global IME Bank:
-- Estimated **67% reduction in fraud-related losses**
-- **Improved customer trust** through fewer incorrect blocks
-- **Compliance** with Nepal Rastra Bank’s regulatory requirements
+Use machine learning models such as Random Forest, XGBoost, and neural networks for fraud classification.
 
----
+Engineer transaction and account-behavior features to identify suspicious activity.
 
-## ⚙️ System Architecture
-- **Data Processing Layer:** Cleans raw transactions, performs feature engineering  
-- **ML Layer:** Runs ensemble models for fraud probability  
-- **Decision Layer:** Provides explanations, flags suspicious activity, assigns risk levels  
+Generate fraud probability scores rather than relying exclusively on binary decisions.
 
----
+Support explainability through SHAP values and interpretable fraud indicators.
 
-## 📌 Future Enhancements
-- Use **transformers** and **graph neural networks** for sequence & network-based fraud detection  
-- Integrate **cross-bank collaboration** with federated learning  
-- Add **mobile app integration** for customer alerts  
-- Implement **privacy-preserving ML** (differential privacy, homomorphic encryption)  
+Provide a web-based interface for analyzing transactions and their predicted fraud risk.
 
----
+🛠️ Tech Stack
 
-## 🏆 Hackathon Submission
-This project was officially submitted to the **Global IME Bank Hackathon (2025)** by **Sweekar Subedi**.
+Language: Python 3
 
----
+Data Processing: NumPy, Pandas
 
-## 📜 License
-This repository is for **academic and research purposes**. Please contact before using in production banking systems.
+Machine Learning: Scikit-learn, XGBoost, TensorFlow/Keras
 
----
+Visualization and Explainability: Matplotlib, Seaborn, SHAP
 
-## 👤 Author
-**Sweekar Subedi**  
-📧 Email: sweekarsubedi18@gmail.com  
-📱 +977 9860614096
+Backend API: Flask
+
+📊 Model Evaluation
+
+The original project documentation reports the following evaluation results:
+
+Metric
+
+Reported Result
+
+Accuracy
+
+95.3%
+
+AUC Score
+
+0.951
+
+False-positive reduction
+
+23% compared with rule-based detection
+
+Response time
+
+Approximately 120–150 ms per transaction
+
+These results should be reproduced and verified against the actual model and evaluation data before being treated as independently validated benchmarks.
+
+⚙️ System Architecture
+
+The system is organized around three conceptual layers:
+
+Data Processing: Prepares transaction data and extracts relevant features.
+
+Machine Learning: Uses trained models to estimate transaction fraud risk.
+
+Prediction and Analysis: Presents predictions and supports the investigation of potentially suspicious transactions.
+
+🔮 Future Enhancements
+
+Explore transformer architectures for sequential transaction analysis.
+
+Investigate graph neural networks to identify relationships among suspicious accounts and transactions.
+
+Develop real-time alerts for potentially fraudulent activity.
+
+Explore privacy-preserving machine learning techniques.
+
+💻 Running the Project Locally
+
+1. Clone the repository
+
+git clone https://github.com/123cs0178/fraud-detection-1.git
+cd fraud-detection-1
+
+2. Install dependencies
+
+pip install -r requirements.txt
+
+3. Start the application
+
+python app.py
+
+Open the local URL displayed in the terminal, if provided by the application.
+
+📜 Usage and License
+
+This project is intended for academic, educational, and research purposes. Contact the maintainer before using it in production banking systems.
+
+👤 Maintainer
+
+Rahul Kumar
+Email: rahulbror612@gmail.com
+Phone: +91 9034341712
+GitHub: 123cs0178
